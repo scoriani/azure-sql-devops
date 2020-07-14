@@ -8,7 +8,7 @@ if schema_id('web') is null begin
 end
 go
 
-grant execute on schema::web to DotNetWebApp 
+grant execute on schema::web to DotNetWebApp
 go
 
 if not exists(select * from sys.sequences where [name] = 'Ids')
